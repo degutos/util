@@ -41,6 +41,20 @@ Lets set the default SHELL for the user root or any other user
 sed -i 's/^ZSH_THEME.*/ZSH_THEME="fino-time"/g' ~/.zshrc
 ```
 
+---
+
+# curl
+
+## Test connection from the pod to service 
+
+```
+➜  cat curl-test.sh 
+for i in {1..3}; do
+   kubectl exec --namespace=kube-public curl -- sh -c 'test=`wget -qO- -T 2  http://webapp-service.default.svc.cluster.local:8080/info 2>&1` && echo "$test OK" || echo "Failed"';
+   echo ""
+done
+```
+
 
 
 
