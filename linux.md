@@ -55,7 +55,36 @@ for i in {1..3}; do
 done
 ```
 
+---
 
+# VIM
+
+## split
+
+We can use :split or :sp to open a window in vim to open the same file twice or open another file in the same vim window. It will split the screen horizontally as default
+
+```
+:split
+:sp
+:split another-file-path.txt
+```
+Alternatively you can open a window vertically with command:
+```
+CTRL + w + v     # this will open the same file vertically
+```
+
+To move between window 
+```
+CTRL + w + arrow up
+CTRL + w + arrow down
+OR
+CTRL + w + arrow right
+CTRL + w + arrow left
+```
+
+Reference to more details on screen: https://www.geeksforgeeks.org/splitting-vim-screen-horizontally-and-vertically-in-linux/
+
+---
 
 
 
