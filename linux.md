@@ -81,6 +81,13 @@ OR
 CTRL + w + arrow right
 CTRL + w + arrow left
 ```
+Macros
+```
+Q+w To start recording into register w
+Q To stop recording
+@w To run the macro again
+4@w To run the macro 4 times (4 lines).
+```
 
 Reference to more details on screen: https://www.geeksforgeeks.org/splitting-vim-screen-horizontally-and-vertically-in-linux/
 
