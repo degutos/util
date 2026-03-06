@@ -142,6 +142,50 @@ $ ip a | grep --color=always -E '([0-9]{1,3}\.){3}[0-9]{1,3}|$'
 - This will show the entire output of "ip a" and highlight the IP address (red color). The |$ will show the no matching lines also.
 
 
+
+# VIM command navigation on bash command
+
+This is util to use VIM motions in the command line bash to edit and navigate through your command
+
+```sh
+$ set -o vi # this command enable your VIM motions in the command line
+```
+
+Example: 
+- when working with a large command line
+
+```sh
+kubectl exec my-pod -- find /var/log -name "*.log"
+```
+
+use:
+- ESC to go to vim motions movingset 
+- b -> to go back one word
+- w -> to go front one word
+- 0 -> to go to begining of the line
+- $ -> to go to end of the line
+- F letter -> to go BACK to the letter
+- f letter -> to go FRONT to the letter
+- dw -> delete word
+- db -> delete word back
+- d$ -> delete until the end of the line
+- d0 -> delete until the begining of the line
+
+## To unset the VIM motion
+
+```sh
+set -o emacs
+```
+
+## To check all set
+
+```sh
+set -o
+```
+
+
+
+
   
 
 
