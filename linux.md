@@ -41,6 +41,39 @@ Lets set the default SHELL for the user root or any other user
 sed -i 's/^ZSH_THEME.*/ZSH_THEME="fino-time"/g' ~/.zshrc
 ```
 
+#### Installing neofetch (if you want)
+
+```sh
+apt install neofetch
+```
+
+```sh
+neofetch
+            .-/+oossssoo+/-.               root@29b2bedf812d 
+        `:+ssssssssssssssssss+:`           ----------------- 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 24.04.4 LTS aarch64 
+    .ossssssssssssssssssdMMMNysssso.       Kernel: 6.17.8-orbstack-00308-g8f9c941121b1 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Uptime: 26 mins 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Packages: 279 (dpkg) 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Shell: zsh 5.9 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   CPU: (8) @ 2.000GHz 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Memory: 1225MiB / 7995MiB 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso                           
++sssshhhyNMMNyssssssssssssyNMMMysssssss+                           
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/
+  +sssssssssdmydMMMMMMMMddddyssssssss+
+   /ssssssssssshdmNNNNmyNMMMMhssssss/
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+        `:+ssssssssssssssssss+:`
+            .-/+oossssoo+/-.
+
+```
+
+
+
 ---
 
 # curl
